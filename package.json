@@ -7,7 +7,8 @@
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "deploy:pages": "cross-env GITHUB_PAGES=true npm run build && gh-pages -d out"
+    "build:pages": "node -e \"process.env.GITHUB_PAGES='true'; require('child_process').execSync('next build',{stdio:'inherit',env:process.env})\" && node -e \"require('fs').copyFileSync('public/.nojekyll','out/.nojekyll')\"",
+    "deploy:pages": "npm run build:pages && gh-pages -d out --dotfiles"
   },
   "dependencies": {
     "lucide-react": "^0.511.0",
