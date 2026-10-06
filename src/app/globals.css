@@ -4,6 +4,9 @@
 
 :root {
   color-scheme: light;
+  --color-surface: #f5f5f7;
+  --color-accent: #0071e3;
+  --color-user-bubble: #d5dde8;
 }
 
 html,
@@ -12,11 +15,11 @@ body {
 }
 
 body {
-  @apply bg-itrs-surface-canvas text-itrs-body antialiased;
+  @apply bg-dem-surface text-dem-body antialiased;
 }
 
 .studio-canvas-grid {
-  background-color: #f4f4f4;
-  background-image: radial-gradient(circle, #bdbdbd 1px, transparent 1px);
+  background-color: var(--color-surface);
+  background-image: radial-gradient(circle, #d4d4d8 1px, transparent 1px);
   background-size: 24px 24px;
 }

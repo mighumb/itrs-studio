@@ -33,6 +33,7 @@ npm run deploy:pages
 | Code | [github.com/mighumb/itrs-studio](https://github.com/mighumb/itrs-studio) |
 | Figma — Studio Preview | [node 1192:31302](https://www.figma.com/design/Fwn3pUkAQweQvuf2MVnqLH/0.-Design-system?node-id=1192-31302) |
 | Figma — écran shell | [7128:1180](https://www.figma.com/design/Fwn3pUkAQweQvuf2MVnqLH/0.-Design-system?node-id=7128-1180) |
+| Référence visuelle / tokens | [ITRS DEM prototype](https://itrs-dem-prototype.vercel.app/) |
 
 ## Documentation
 

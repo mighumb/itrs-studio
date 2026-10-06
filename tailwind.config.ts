@@ -1,8 +1,8 @@
 import type { Config } from "tailwindcss";
 
 /**
- * ITRS / Ekara design tokens — sourced from Figma DS (file Fwn3pUkAQweQvuf2MVnqLH).
- * e.g. button/primary/filled/default/background → #057b80
+ * Tokens alignés sur https://itrs-dem-prototype.vercel.app/
+ * (--color-surface, --color-accent, --color-user-bubble)
  */
 const config: Config = {
   content: [
@@ -13,37 +13,38 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        itrs: {
-          primary: "#057b80",
-          "primary-foreground": "#fefefe",
-          body: "#292929",
-          muted: "#7c7c7c",
-          icon: "#464646",
-          "input-text": "#656565",
-          border: "#bdbdbd",
-          separator: "#efefef",
-          surface: {
-            lightest: "#fefefe",
-            lighter: "#f9f9f9",
-            light: "#f6f6f6",
-            canvas: "#f4f4f4",
-          },
-          secondary: "#464646",
-          "icon-button": "#dcdcdc",
+        dem: {
+          surface: "#f5f5f7",
+          accent: "#0071e3",
+          "user-bubble": "#d5dde8",
+          body: "#18181b",
+          muted: "#71717a",
+          icon: "#52525b",
+          border: "#e4e4e7",
+          separator: "#f4f4f5",
+          card: "#ffffff",
         },
       },
       borderRadius: {
-        "itrs-xs": "8px",
-        "itrs-m": "16px",
-        "itrs-xl": "24px",
+        "dem-sm": "0.5rem",
+        "dem-md": "0.75rem",
+        "dem-lg": "1rem",
+        "dem-xl": "1.5rem",
       },
       fontFamily: {
-        sans: ["var(--font-open-sans)", "system-ui", "sans-serif"],
+        sans: [
+          "-apple-system",
+          "BlinkMacSystemFont",
+          '"SF Pro Text"',
+          '"Segoe UI"',
+          "system-ui",
+          "sans-serif",
+        ],
       },
       boxShadow: {
-        panel:
-          "0 4px 16px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.04)",
-        fab: "0 4px 14px rgba(5, 123, 128, 0.35)",
+        panel: "0 1px 3px rgba(0, 0, 0, 0.06), 0 4px 12px rgba(0, 0, 0, 0.04)",
+        fab: "0 4px 14px rgba(0, 113, 227, 0.28)",
+        card: "0 1px 2px rgba(0, 0, 0, 0.04), 0 8px 24px rgba(0, 0, 0, 0.06)",
       },
     },
   },

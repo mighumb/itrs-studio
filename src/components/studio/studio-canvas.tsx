@@ -5,7 +5,7 @@ export function StudioCanvas() {
       aria-label="Journey canvas"
     >
       <div className="flex h-full w-full items-center justify-center p-8">
-        <p className="max-w-sm text-center text-sm text-itrs-muted">
+        <p className="max-w-sm text-center text-sm text-dem-muted">
           Canvas vide — les nœuds du parcours apparaîtront ici.
         </p>
       </div>
