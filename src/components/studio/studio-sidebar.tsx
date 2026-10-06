@@ -28,7 +28,7 @@ const ITEMS: SidebarItem[] = [
 export function StudioSidebar() {
   return (
     <aside
-      className="relative z-10 ml-4 mt-3 flex w-12 shrink-0 flex-col rounded-xl border border-studio-border bg-studio-surface shadow-panel"
+      className="absolute left-4 top-[4.75rem] z-20 flex w-12 flex-col rounded-xl border border-studio-border bg-studio-surface shadow-panel"
       aria-label="Studio tools"
     >
       <nav className="flex flex-col items-center gap-1 p-1.5">

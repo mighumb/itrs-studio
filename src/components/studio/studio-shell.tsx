@@ -11,13 +11,11 @@ export function StudioShell() {
   const [chatOpen, setChatOpen] = useState(false);
 
   return (
-    <div className="flex h-screen flex-col overflow-hidden">
+    <div className="relative h-screen w-screen overflow-hidden">
+      <StudioCanvas />
       <StudioHeader />
-      <div className="relative flex min-h-0 flex-1">
-        <StudioSidebar />
-        <StudioCanvas />
-        <ChatPanel open={chatOpen} onClose={() => setChatOpen(false)} />
-      </div>
+      <StudioSidebar />
+      <ChatPanel open={chatOpen} onClose={() => setChatOpen(false)} />
       {!chatOpen && (
         <AiAssistantFab onClick={() => setChatOpen(true)} />
       )}

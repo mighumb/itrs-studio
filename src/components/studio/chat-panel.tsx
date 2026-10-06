@@ -19,7 +19,7 @@ export function ChatPanel({ open, onClose }: ChatPanelProps) {
         onClick={onClose}
       />
       <aside
-        className="fixed bottom-0 right-0 top-16 z-50 flex w-full max-w-[min(100%,26rem)] flex-col border-l border-studio-border bg-studio-surface shadow-panel sm:max-w-md"
+        className="fixed bottom-0 right-0 top-0 z-50 flex w-full max-w-[min(100%,26rem)] flex-col border-l border-studio-border bg-studio-surface shadow-panel sm:max-w-md"
         role="dialog"
         aria-modal="true"
         aria-labelledby="chat-panel-title"

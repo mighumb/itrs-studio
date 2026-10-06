@@ -3,10 +3,10 @@ import { Layers } from "lucide-react";
 export function StudioHeader() {
   return (
     <header
-      className="flex h-16 shrink-0 items-center justify-between border-b border-studio-border bg-studio-header px-4"
+      className="pointer-events-none absolute inset-x-0 top-0 z-20 flex h-16 items-center justify-between px-4"
       role="banner"
     >
-      <div className="flex items-center gap-3">
+      <div className="pointer-events-auto flex items-center gap-3">
         <div
           className="flex h-9 w-9 items-center justify-center rounded-lg bg-teal-700 text-white"
           aria-hidden
@@ -20,14 +20,14 @@ export function StudioHeader() {
           <p className="text-xs text-studio-muted">Journey editor</p>
         </div>
       </div>
-      <div className="flex items-center gap-2">
+      <div className="pointer-events-auto flex items-center gap-2">
         <span
-          className="rounded-md border border-studio-border bg-slate-50 px-2 py-1 text-xs font-medium text-slate-600"
+          className="rounded-md border border-studio-border/80 bg-white/70 px-2 py-1 text-xs font-medium text-slate-600 backdrop-blur-sm"
         >
           Main
         </span>
         <div
-          className="h-8 w-8 rounded-full bg-gradient-to-br from-slate-200 to-slate-300"
+          className="h-8 w-8 rounded-full bg-gradient-to-br from-slate-200/90 to-slate-300/90 backdrop-blur-sm"
           title="User"
           aria-label="User menu placeholder"
         />

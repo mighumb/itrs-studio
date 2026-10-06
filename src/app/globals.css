@@ -12,7 +12,7 @@ body {
 }
 
 body {
-  @apply bg-studio-canvas text-slate-900 antialiased;
+  @apply text-slate-900 antialiased;
 }
 
 /* Subtle dot grid for empty canvas (Figma artboard pattern) */
