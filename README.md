@@ -40,6 +40,15 @@ Lire dans cet ordre :
 - Héritage fonctionnel **Ekara** (parcours multi-canal, debug, exécution pas à pas), ouverture **Uptrends** / **ITRS**, UX moderne type **Zapier / Luma Lab**.
 - Le prototype peut diverger de la DA Ekara ; le nom cible produit est **ITRS Studio**.
 
+## Développement local
+
+```bash
+npm install
+npm run dev
+```
+
+Ouvrir [http://localhost:3000](http://localhost:3000) — shell Studio (header, sidebar, canvas vide, bouton **AI assistant** → panneau chat).
+
 ## Licence / confidentialité
 
 Contenu interne ITRS Group / ip-label. Ne pas publier en open source sans validation juridique et marketing.
