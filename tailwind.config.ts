@@ -33,9 +33,9 @@ const config: Config = {
         },
       },
       borderRadius: {
-        itrs-xs: "8px",
-        itrs-m: "16px",
-        itrs-xl: "24px",
+        "itrs-xs": "8px",
+        "itrs-m": "16px",
+        "itrs-xl": "24px",
       },
       fontFamily: {
         sans: ["var(--font-open-sans)", "system-ui", "sans-serif"],
